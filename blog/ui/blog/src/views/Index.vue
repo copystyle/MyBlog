@@ -1,11 +1,12 @@
 <template lang="html">
   <div class="index">
     <div id="wrapper">
-      <h1>Home</h1>
+      <h1>CopyLeft Home</h1>
       <h2>just a Coding Peasant</h2>
-      <p><router-link to="/blog">Blog</router-link></p>
-      <p><a href="https://github.com/JhonXY">Github</a></p>
-      <p><a href="https://www.zhihu.com/people/minia-45/activities">知乎</a></p>
+      <!-- <p><router-link to="/blog">Blog</router-link></p> -->
+      <p><a href="https://github.com/copystyle">Github</a></p>
+      <p><a href="https://www.zhihu.com/people/copystyle/activities">知乎</a></p>
+      <p><a href="https://www.jianshu.com/users/59ccf21c7374/timeline">简书</a></p>
     </div>
     <canvas width="1920" height="950"></canvas>
   </div>
@@ -18,7 +19,7 @@ export default {
     var _gaq = []
     _gaq.push(['_setAccount', 'UA-38965494-1'])
     _gaq.push(['_setDomainName', 'evanyou.me'])
-    _gaq.push(['_trackPageview'])
+    _gaq.push(['_trackPageview']);
     (function () {
       var ga = document.createElement('script')
       ga.type = 'text/javascript'

@@ -74,8 +74,9 @@ export function scrollIt (
       window.requestAnimationFrame = function (callback, element) {
         var currTime = new Date().getTime()
         var timeToCall = Math.max(0, 16 - (currTime - lastTime))
+        var callTime = currTime + timeToCall
         var id = window.setTimeout(function () {
-          callback(currTime + timeToCall)
+          callback(callTime)
         }, timeToCall)
         lastTime = currTime + timeToCall
         return id
