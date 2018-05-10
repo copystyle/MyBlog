@@ -39,14 +39,14 @@
     <el-table-column
       label="操作"
       width="210">
-      <template scope="scope">
+      <template slot-scope="scope">
         <el-button
-          @click="handle(scope.$index, scope.row)"
+          @click="handle(slot-scope.$index, slot-scope.row)"
           type="info"
           size="small">查看/编辑
         </el-button>
         <el-button
-          @click="handleDelete(scope.$index, scope.row)"
+          @click="handleDelete(slot-scope.$index, slot-scope.row)"
           type="danger"
           size="small">删除
         </el-button>
