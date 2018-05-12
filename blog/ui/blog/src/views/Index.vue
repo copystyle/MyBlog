@@ -1,133 +1,108 @@
 <template lang="html">
   <div class="index">
-    <div id="wrapper">
-      <h1>CopyLeft Home</h1>
-      <h2>just a Coding Peasant</h2>
-      <!-- <p><router-link to="/blog">Blog</router-link></p> -->
-      <p><a href="https://github.com/copystyle">Github</a></p>
-      <p><a href="https://www.zhihu.com/people/copystyle/activities">知乎</a></p>
-      <p><a href="https://www.jianshu.com/users/59ccf21c7374/timeline">简书</a></p>
-    </div>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <p class="navbar-brand scroll-top logo"><b>CopyStyle' Domain</b></p>
+                </div>
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" id="mainNav">
+                        <li><a href="https://github.com/copystyle" class="scroll-link">Github</a></li>
+                        <li><a href="https://www.zhihu.com/people/copystyle/activities" class="scroll-link">知乎</a></li>
+                        <li><a href="https://www.jianshu.com/users/59ccf21c7374/timeline" class="scroll-link">简书</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="#top"></div>
+    <section id="home">
+        <div class="banner-container">
+            <img src="../assets/images/banner-bg.jpg" alt="banner" />
+            <div class="container banner-content">
+                <div id="da-slider" class="da-slider">
+                    <div class="da-slide">
+                        <h2>Webdesigner</h2>
+                        <p>Amazing free responsive website for free, enjoy!!!</p>
+                        <div class="da-img"></div>
+                    </div>
+                    <div class="da-slide">
+                        <h2>UX/UI Developer</h2>
+                        <p>I develop website using Bootstrap front-end framework..</p>
+                        <div class="da-img"></div>
+                    </div>
+                    <div class="da-slide">
+                        <h2>HTML5/CSS3</h2>
+                        <p>HTML5 is a markup language used for structuring and presenting Web.</p>
+                        <div class="da-img"></div>
+                    </div>
+                    <div class="da-slide">
+                        <h2>JavaScript/jQuery</h2>
+                        <p>jQuery: Write Less, Do More...</p>
+                        <div class="da-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="introText">
+        <div class="container">
+            <div class="text-center">
+            <h1>I am a novice programmer, eager to be a Geek.</h1>
+              <p>I am a software engineer based in Shanghai, China.</p>
+              <p>In my free time, I am excited to explore anything I am interested or related to my work.</p>
+              <p>They can always help me to improve myself, open my eyes and get ready to the near future.</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="aboutUs" class="secPad">
+        <div class="container">
+            <div class="heading text-center">
+                <h2>This is CopyStyle</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center tileBox">
+                    <div class="txtHead"><i class="fa fa-desktop"></i>
+                    <h3>Python</h3></div>
+                </div>
+                <div class="col-md-4 text-center tileBox">
+                    <div class="txtHead"><i class="fa fa-lightbulb-o"></i>
+                    <h3>JavaScript</h3></div>
+                </div>
+                <div class="col-md-4 text-center tileBox">
+                    <div class="txtHead"><i class="fa fa-css3"></i>
+                    <h3>HTML5/CSS3</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="quote" class="bg-parlex">
+        <div class="parlex-back">
+            <div class="container secPad text-center">
+              <h2>‘It works on my machine!’</h2><h3>-CopyStyle</h3>
+            </div>
+        </div>
+    </section>
+    <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
     <canvas width="1920" height="950"></canvas>
   </div>
 </template>
 
 <script>
-export default {
-  mounted () {
-    // var _gaq = _gaq || []
-    var _gaq = []
-    _gaq.push(['_setAccount', 'UA-38965494-1'])
-    _gaq.push(['_setDomainName', 'evanyou.me'])
-    _gaq.push(['_trackPageview']);
-    (function () {
-      var ga = document.createElement('script')
-      ga.type = 'text/javascript'
-      ga.async = true
-      ga.src = (document.location.protocol === 'https:' ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'
-      var s = document.getElementsByTagName('script')[0]
-      s.parentNode.insertBefore(ga, s)
-    })()
-    // document.getElementByClassName('index').addEventListener('touchmove', function(e) {
-    //   e.preventDefault()
-    // })
-    var c = document.getElementsByTagName('canvas')[0]
-    var x = c.getContext('2d')
-    var pr = window.devicePixelRatio || 1
-    var w = window.innerWidth
-    var h = window.innerHeight
-    var f = 90
-    var q
-    var m = Math
-    var r = 0
-    var u = m.PI * 2
-    var v = m.cos
-    var z = m.random
-    c.width = w * pr
-    c.height = h * pr
-    x.scale(pr, pr)
-    x.globalAlpha = 0.6
-    function i () {
-      x.clearRect(0, 0, w, h)
-      q = [{
-        x: 0,
-        y: h * 0.7 + f
-      }, {
-        x: 0,
-        y: h * 0.7 - f
-      }]
-      while (q[1].x < w + f) d(q[0], q[1])
-    }
-    function d (i, j) {
-      x.beginPath()
-      x.moveTo(i.x, i.y)
-      x.lineTo(j.x, j.y)
-      var k = j.x + (z() * 2 - 0.25) * f
-      var n = y(j.y)
-      x.lineTo(k, n)
-      x.closePath()
-      r -= u / -50
-      x.fillStyle = '#' + (v(r) * 127 + 128 << 16 | v(r + u / 3) * 127 + 128 << 8 | v(r + u / 3 * 2) * 127 + 128).toString(16)
-      x.fill()
-      q[0] = q[1]
-      q[1] = {
-        x: k,
-        y: n
-      }
-    }
-    function y (p) {
-      var t = p + (z() * 2 - 1.1) * f
-      return (t > h || t < 0) ? y(p) : t
-    }
-    document.onclick = i
-    document.ontouchstart = i
-    i()
-  }
-}
+import '../assets/css/bootstrap.min.css'
+import '../assets/css/isotope.css'
+import '../assets/css/jquery.fancybox.css'
+import '../assets/css/da-slider.css'
+import '../assets/css/owl.carousel.css'
+import '../assets/css/styles.css'
+import '../assets/css/font-awesome.min.css'
+import '../assets/css/font-awesome.css'
+document.title = 'CopyStyle'
 </script>
 
 <style media="screen" scoped>
-  .index{
-    font-family: 'Open Sans', 'Helvetica Neue',
-    'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
-    color: #333;
-  }
-  #wrapper {
-    position: absolute;
-    left: 0;
-    width: 320px;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    margin-left: -160px;
-    margin-top: -160px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  h1 {
-    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    letter-spacing: 9px;
-    text-transform: uppercase;
-    margin: 12px 0;
-    left: 4px;
-  }
-  h2 {
-      color: #999;
-      font-weight: normal;
-      font-size: 15px;
-      letter-spacing: .12em;
-      margin-bottom: 30px;
-      left: 3px;
-  }
-  p {
-      font-size: 14px;
-      line-height: 2em;
-      margin: 0;
-      letter-spacing: 2px;
-  }
   h1, h2 {
     position: relative;
   }
@@ -139,13 +114,5 @@ export default {
     width: 100%;
     height: 100%;
     pointer-events: none;
-  }
-  a {
-    color: #999;
-    text-decoration: none;
-    transition: color .2s ease;
-  }
-  a:hover {
-    color: #deba3b;
   }
 </style>
