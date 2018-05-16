@@ -81,7 +81,7 @@
     <section id="quote" class="bg-parlex">
         <div class="parlex-back">
             <div class="container secPad text-center">
-              <h2>‘It works on my machine!’</h2><h3>-CopyStyle</h3>
+              <h2>‘It works on my machine!’</h2>
             </div>
         </div>
     </section>
