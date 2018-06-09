@@ -1,11 +1,12 @@
+<!--
 <!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="shortcut icon" type="image/png" href="{{STATIC_URL}}/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="{{STATIC_URL}}/static/favicon.ico"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Post Page</title>
+    <title>CopyStyle's Blog</title>
     <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" href="../static/assets/css/user.css">
@@ -20,18 +21,17 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active" role="presentation"><a href="#">HOME </a></li>
-                        <li role="presentation"><a href="#">BLOG </a></li>
-                        <li role="presentation"><a href="#">CONTACT </a></li>
+                        <li class="active" role="presentation"><a href="http://localhost:8080">HOME</a></li>
+                        <li role="presentation"><a href="http://localhost:8080/introduce">INTRODUCE </a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <ul class="nav nav-pills categories">
-        <li class="active"><a href="#">Coding </a></li>
+        <li class="active"><a href="#">All</a></li>
+        <li><a href="#">Coding</a></li>
         <li><a href="#">Fitness </a></li>
-        <li><a href="#">Guitar </a></li>
         <li><a href="#">Economy </a></li>
         <li><a href="#">Life </a></li>
     </ul>
@@ -39,29 +39,259 @@
         <div class="row">
             <div class="col-md-6 post-title">
                 <h1>Coder in Gym</h1>
-                <p class="author"><strong>CopyStyle</strong> <span class="text-muted">October 6th 2015 </span></p>
+                <p class="author"><strong>CopyStyle</strong> <span class="text-muted">October 6th 2018 </span></p>
             </div>
             <div class="col-md-6 col-md-offset-0 post-body">
-                <!--
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sem quam, scelerisque vitae sem non, ornare condimentum leo. Vivamus eros tortor, tincidunt et viverra ac, gravida eu augue. Interdum et malesuada fames ac ante ipsum primis
-                    in faucibus. Praesent nibh ex, hendrerit at tellus sed, laoreet suscipit leo. </p>
-                <p>Curabitur cursus ac quam sit amet mattis. Donec lacinia massa id libero tincidunt, sed ultricies magna eleifend. Integer porta consectetur ipsum sed porttitor. Praesent sed convallis nisi. Mauris eget commodo sem. Sed auctor commodo quam
-                    eu semper. </p>
-                <p>Sed mollis, urna eu tempus facilisis, diam tellus aliquam tortor, et vestibulum ante quam non justo. Nullam luctus rutrum mattis. Maecenas in pharetra mi, vel mollis odio. </p>
-                <figure><img class="img-thumbnail" src="../static/assets/img/camera_illustration.jpg">
-                    <figcaption>Praesent sed convallis nisi </figcaption>
-                </figure>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sem quam, scelerisque vitae sem non, ornare condimentum leo. Vivamus eros tortor, tincidunt et viverra ac, gravida eu augue. Interdum et malesuada fames ac ante ipsum primis
-                    in faucibus. Praesent nibh ex, hendrerit at tellus sed, laoreet suscipit leo. </p>
-                -->
-
+                <h2>GO 语言简介（上）— 语法<h2>
+                <p>周末天气不好，只能宅在家里，于是就顺便看了一下Go语言，觉得比较有意思，所以写篇文章介绍一下。我想写一篇你可以在乘坐地铁或公交车上下班时就可以初步了解一门语言的文章。所以，下面的文章主要是以代码和注释为主。只需要你对C语言，Unix，Python有一点基础，我相信你会在30分钟左右读完并对Go语言有一些初步了解的。</p>
+                <h2>关于我”极客时间“的专栏<h2>
+                <p>不少朋友都知道我在“极客时间”上开了一个收费专栏，这个专栏会开设大约一年的时间，一共会发布104篇文章。现在，我在上面以每周两篇文章的频率已发布了27篇文章了，也就是差不多两个半月的时间。新的一年开始了，写专栏这个事对我来说是第一次，在这个过程中有一些感想，所以，我想在这里说一下这些感受和一些相关的故事，算是一个记录，也算是对我专栏的正式介绍，还希望能得到、大家的喜欢和指点。</p>
             </div>
         </div>
     </div>
     <footer>
-        <h5>CopyStyle Blog © 2016</h5></footer>
+        <h5>CopyStyle Blog © 2018</h5></footer>
     <script src="../static/assets/js/jquery.min.js"></script>
     <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+    <title>CopyStyle's Blog</title>
+    <link rel="shortcut icon" type="image/png" href="../static/favicon.ico"/>
+	<meta name="description" content="Free Responsive Html5 Css3 Templates ">
+	<meta name="author" content="#">
+	
+    <!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+	================================================== -->
+  	<link rel="stylesheet" href="../static/assets/css/zerogrid.css">
+	<link rel="stylesheet" href="../static/assets/css/style.css">
+	
+	<!-- Custom Fonts -->
+    <link href="../static/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	
+	<link rel="stylesheet" href="../static/assets/css/menu.css">
+	<script src="../static/assets/js/jquery1111.min.js" type="text/javascript"></script>
+	<script src="../static/assets/js/script.js"></script>
+	
+	<!-- Owl Carousel Assets -->
+    <link href="../static/assets/owl-carousel/owl.carousel.css" rel="stylesheet">
+	
+</head>
+
+<body>
+	<div class="wrap-body">
+		<div id='cssmenu' class="align-center">
+			<ul>
+			   <li class="active"><a href='index.html'><span>Home</span></a></li>
+			   <!-- <li class=' has-sub'><a href='#'><span>Coding</span></a></li>
+				    <ul >
+					 <li class='has-sub'><a href='#'><span>Item 1</span></a>
+						<ul>
+						   <li><a href='#'><span>Sub Item</span></a></li>
+						   <li class='last'><a href='#'><span>Sub Item</span></a></li>
+						</ul>
+					 </li>
+					 <li class='has-sub'><a href='#'><span>Item 2</span></a>
+						<ul>
+						   <li><a href='#'><span>Sub Item</span></a></li>
+						   <li class='last'><a href='#'><span>Sub Item</span></a></li>
+						</ul>
+					 </li>
+                  </ul></li> -->
+                <li><a href='single.html'><span>Coding</span></a></li>
+               <li><a href='single.html'><span>Economy</span></a></li>
+               <li><a href='single.html'><span>Fitness</span></a></li>
+			   <li class='last'><a href='contact.html'><span>Contacts</span></a></li>
+			</ul>
+		</div>
+		<header class="">
+			<div class="logo">
+				<hr class="line-1">
+				<a href="#">CopyStyle</a>
+				<span>Lorem ipsum dolor sit amet</span>
+				<hr class="line-1">
+			</div>
+			<div id="owl-slide" class="owl-carousel">
+				<div class="item">
+					<img src="../static/assets/images/slider1.jpg" />
+				</div>
+				<div class="item">
+					<img src="../static/assets/images/slider2.jpg" />
+				</div>
+				<div class="item">
+					<img src="../static/assets/images/slider3.jpg" />
+					
+				</div>
+			</div>
+		</header>
+		<!--////////////////////////////////////Container-->
+		<section id="container">
+			<div class="wrap-container">
+				<div id="main-content">
+					<div class="wrap-content">
+						<div class="zerogrid">
+							<div class="row">
+								<div class="col-1-2">
+									<article>
+										<div class="post-thumbnail-wrap">
+											<a href="single.html" class="portfolio-box">
+												<img src="../static/assets/images/11.jpg" alt="">
+												<div class="portfolio-box-caption">
+													<div class="portfolio-box-caption-content">
+														<div class="project-text">
+															Art and design have always been related, but today, experimentation and personal expression are the name of the game. Homeowners are using art to make a personal statement – your art choice has ...
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="entry-header ">
+											<h3 class="entry-title">Vital Films presents INSIGHT</h3>
+											<div class="l-tags"><a href="#">Design</a> / <a href="#">Illustrations</a> / <a href="#">Typography</a></div>
+										</div>
+									</article>
+								</div>
+								<div class="col-1-2">
+									<article>
+										<div class="post-thumbnail-wrap">
+											<a href="single.html" class="portfolio-box">
+												<img src="../static/assets/images/12.jpg" alt="">
+												<div class="portfolio-box-caption">
+													<div class="portfolio-box-caption-content">
+														<div class="project-text">
+															Art and design have always been related, but today, experimentation and personal expression are the name of the game. Homeowners are using art to make a personal statement – your art choice has ...
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="entry-header ">
+											<h3 class="entry-title">Branding and Advertisement</h3>
+											<div class="l-tags"><a href="#">Design</a> / <a href="#">Illustrations</a> / <a href="#">Typography</a></div>
+										</div>
+									</article>
+								</div>
+							</div>
+                            <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
+							<div class="row">
+								<div class="col-1-2">
+									<article>
+										<div class="post-thumbnail-wrap">
+											<a href="single.html" class="portfolio-box">
+												<img src="../static/assets/images/13.jpg" alt="">
+												<div class="portfolio-box-caption">
+													<div class="portfolio-box-caption-content">
+														<div class="project-text">
+															Art and design have always been related, but today, experimentation and personal expression are the name of the game. Homeowners are using art to make a personal statement – your art choice has ...
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="entry-header ">
+											<h3 class="entry-title">Branding and Advertisement</h3>
+											<div class="l-tags"><a href="#">Design</a> / <a href="#">Illustrations</a> / <a href="#">Typography</a></div>
+										</div>
+									</article>
+								</div>
+								<div class="col-1-2">
+									<article>
+										<div class="post-thumbnail-wrap">
+											<a href="single.html" class="portfolio-box">
+												<img src="../static/assets/images/14.jpg" alt="">
+												<div class="portfolio-box-caption">
+													<div class="portfolio-box-caption-content">
+														<div class="project-text">
+															Art and design have always been related, but today, experimentation and personal expression are the name of the game. Homeowners are using art to make a personal statement – your art choice has ...
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="entry-header ">
+											<h3 class="entry-title">Branding and Advertisement</h3>
+											<div class="l-tags"><a href="#">Design</a> / <a href="#">Illustrations</a> / <a href="#">Typography</a></div>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1-2">
+									<article>
+										<div class="post-thumbnail-wrap">
+											<a href="single.html" class="portfolio-box">
+												<img src="../static/assets/images/1.jpg" alt="">
+												<div class="portfolio-box-caption">
+													<div class="portfolio-box-caption-content">
+														<div class="project-text">
+															Art and design have always been related, but today, experimentation and personal expression are the name of the game. Homeowners are using art to make a personal statement – your art choice has ...
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="entry-header ">
+											<h3 class="entry-title">Branding and Advertisement</h3>
+											<div class="l-tags"><a href="#">Design</a> / <a href="#">Illustrations</a> / <a href="#">Typography</a></div>
+										</div>
+									</article>
+								</div>
+								<div class="col-1-2">
+									<article>
+										<div class="post-thumbnail-wrap">
+											<a href="single.html" class="portfolio-box">
+												<img src="../static/assets/images/2.jpg" alt="">
+												<div class="portfolio-box-caption">
+													<div class="portfolio-box-caption-content">
+														<div class="project-text">
+															Art and design have always been related, but today, experimentation and personal expression are the name of the game. Homeowners are using art to make a personal statement – your art choice has ...
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="entry-header ">
+											<h3 class="entry-title">Branding and Advertisement</h3>
+											<div class="l-tags"><a href="#">Design</a> / <a href="#">Illustrations</a> / <a href="#">Typography</a></div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- carousel -->
+		<script src="../static/assets/owl-carousel/owl.carousel.js"></script>
+		<script>
+		$(document).ready(function() {
+		  $("#owl-slide").owlCarousel({
+			autoPlay: 3000,
+			items : 1,
+			itemsDesktop : [1199,1],
+			itemsDesktopSmall : [979,1],
+			itemsTablet : [768, 1],
+			itemsMobile : [479, 1],
+			navigation: true,
+			navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+			pagination: false
+		  });
+		});
+		</script>
+	</div>
+</body>
 </html>

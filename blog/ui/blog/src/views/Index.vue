@@ -1,6 +1,7 @@
 <template lang="html">
   <div class="index">
     <header class="header">
+        <link rel="shortcut icon" href="../static/Copyleft.ico">
         <div class="container">
             <nav class="navbar navbar-inverse" role="navigation">
                 <div class="navbar-header">
@@ -8,9 +9,8 @@
                 </div>
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav" id="mainNav">
-                        <li><a href="https://github.com/copystyle" class="scroll-link">Github</a></li>
-                        <li><a href="https://www.zhihu.com/people/copystyle/activities" class="scroll-link">知乎</a></li>
-                        <li><a href="https://www.jianshu.com/users/59ccf21c7374/timeline" class="scroll-link">简书</a></li>
+                        <li><router-link to='/introduce'>Introduce</router-link><li>
+                        <li><a href="http://localhost:8000" class="scroll-link">Blog</a></li>
                     </ul>
                 </div>
             </nav>

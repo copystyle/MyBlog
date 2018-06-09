@@ -4,7 +4,7 @@
     <div class="headpic">
       <div class="container headtitle">
         <div class="title">
-          <h1 href="/blog">Chunibyo</h1>
+          <h1>CopyStyle</h1>
         </div>
       </div>
     </div>
@@ -17,30 +17,32 @@
           <side-section>
             <div slot="sidecontent">
               <h3>
-                <a href="">JhonXY</a>
-                <span class="cat-desc">Just A Coding Peasant</span>
+                <a href="">CopyStyle</a>
+                <span class="cat-desc">Just A Novice</span>
               </h3>
               <div class="pres">
               <a href="" class="pic">
-              <img src="/static/card.jpg" alt="我的头像">
+              <img src="/static/Photo.jpeg" alt="我的头像">
               </a>
               <a href="" class="detail">
                 <span class="item-info">
-                  <span class="item-title">XY</span>
-                  <span class="item-desc">2017</span>
+                  <span class="item-title">XXYY</span>
+                  <span class="item-desc">2018</span>
                 </span>
               </a>
               </div>
               <div class="social">
-                <a data-balloon="微博" href="http://weibo.com/" rel="nofollow" class="icon"><i class="fa fa-weibo" style="background-color: #dd4b39"></i></a>
-                <a data-balloon="github" href="https://github.com/JhonXY" rel="nofollow" class="icon"><i class="fa fa-github" style="background-color: #55acee;"></i></a>
+                <a data-balloon="微博" href="https://weibo.com/5650430896/profile?topnav=1&wvr=6" rel="nofollow" class="icon"><i class="fa fa-weibo" style="background-color: #dd4b39"></i></a>
+                <a data-balloon="github" href="https://github.com/copystyl" rel="nofollow" class="icon"><i class="fa fa-github" style="background-color: #55acee;"></i></a>
+                <a data-ballonn="知乎" href="https://www.zhihu.com/people/copystyle/activities" rel="nofollow" class="icon"><i class="fa fa-github" style="background-color: #55acee;"></i></a>
+                <a data-ballonn="简书" href="https://www.jianshu.com/users/59ccf21c7374/timeline" rel="nofollow" class="icon"><i class="fa fa-github" style="background-color: #55acee;"></i></a>
                 <el-popover
                   ref="youxiang"
                   placement="bottom"
                   title="我的邮箱"
                   width="50"
                   trigger="hover"
-                  content="1076849402@qq.com">
+                  content="xxyyxh@foxmail.com">
                 </el-popover>
                 <a data-balloon="邮箱" href="javascript:;" rel="nofollow" class="icon" v-popover:youxiang><i class="fa fa-envelope" style="background-color: #3b5998"></i></a>
                 <el-popover
@@ -86,7 +88,7 @@
               </div>
             </div>
           </side-section>
-          <!-- <iframe frameborder="no" border="0"  width="100%" height="300px" src="//music.163.com/outchain/player?type=0&amp;id=865099185&amp;auto=0&amp;"></iframe> -->
+
         </div>
       </div>
     </div>
@@ -103,7 +105,7 @@ import sideSection from '@/components/sideSection.vue'
 import scrollTop from '@/components/scrollTop.vue'
 import axios from 'axios'
 export default {
-  name: 'Blog',
+  name: 'Introduce',
   components: {
     NavHeader,
     NavFooter,
@@ -203,7 +205,7 @@ a.pic {
   position: absolute;
 }
 a.pic img {
-  height: 100px;
+  height: 120px;
   width: 100px;
   display: inline-block;
   overflow: hidden;
@@ -248,8 +250,6 @@ a.pic img {
 }
 .social a i {
   font-size: 22px;
-  /*width: 30px;
-  height: 30px;*/
   width: 38px;
   line-height: 38px;
   border-radius: 50px;
