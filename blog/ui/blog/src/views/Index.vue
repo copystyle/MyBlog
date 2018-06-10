@@ -10,7 +10,7 @@
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav" id="mainNav">
                         <li><router-link to='/introduce'>Introduce</router-link><li>
-                        <li><a href="http://localhost:8000" class="scroll-link">Blog</a></li>
+                        <li><a href="http://localhost:8000/index" class="scroll-link">Blog</a></li>
                     </ul>
                 </div>
             </nav>
