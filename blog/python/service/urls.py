@@ -16,10 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.staticfiles.views import serve
-from service.views import ImagesHandler
+from service.views import ImagesHandler, ArticleHandler
 
 urlpatterns = [
     url(r'^static/(?P<path>.*)$', serve),
     url(r'^admin/', admin.site.urls),
     url(r'^index$', ImagesHandler.as_view()),
+    url(r'article/([0-9]+)$', ArticleHandler.as_view()),
 ]

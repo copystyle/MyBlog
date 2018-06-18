@@ -15,3 +15,11 @@ def add_article(**kwargs):
 
 def get_articles_by_block():
     pass
+
+def get_article(**kwargs):
+    article = Article.object.filter(**kwargs).first()
+    if article:
+        return article
+    else:
+        # todo raise exception
+        pass

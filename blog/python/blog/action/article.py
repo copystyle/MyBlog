@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-from blog.table.article import get_articles
+from blog.table.article import get_articles, get_article
 
 class ArticleMgm(object):
     def __init__(self):
@@ -71,3 +71,10 @@ class ArticleMgm(object):
         # return self.test_result
         all_articles = get_articles()
         return all_articles
+    
+    def get_article(self, article_id):
+        article = get_article(article_id=article_id)
+        if article:
+            return dict(
+                # todo
+            )
